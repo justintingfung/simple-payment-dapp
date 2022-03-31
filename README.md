@@ -1,11 +1,11 @@
 A **Simple Payment DAPP** Frontend for a payment smart contract running on the Ethereum blockchain (Rinkeby test network).
 
-##### Features
+#### Features
 - Connect wallet, deposit or withdraw ETH
 - Create friend list
 - Transfer ETH to friends on the friend list
 
-##### Tech Stack
+#### Tech Stack
 - Next.js
 - Typescript
 - Ethers.js
