@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+      ethereum :any;
+  }
+}
+
 import type { NextPage } from 'next'
 import { ReactChild, ReactFragment, ReactPortal, SetStateAction, useEffect, useState } from 'react'
 // import Head from 'next/head'
@@ -297,7 +303,7 @@ const Home: NextPage = () => {
             </thead>
             <tbody>
               {(customerFriendList || []).map((item: { name: string, walletAddress: string }, idx: number) => (
-                <tr>
+                <tr key={idx}>
                   <td>
                     <input
                       type="checkbox"
