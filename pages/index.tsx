@@ -1,6 +1,6 @@
 declare global {
   interface Window {
-      ethereum :any;
+    ethereum: any;
   }
 }
 
@@ -176,7 +176,7 @@ const Home: NextPage = () => {
       console.log(error);
     }
   }
-  
+
   const handleSelectFriend = (item: Friend) => {
     if (item.name !== selectedFriend?.name || item.walletAddress !== selectedFriend?.walletAddress) {
       setSelectedFriend(item)
@@ -219,7 +219,7 @@ const Home: NextPage = () => {
       <section className="customer-section m-10 p-5 bg-white rounded-lg max-w-3xl mx-auto">
         <h1 className="text-xl font-bold">My Account</h1>
         {error && <p className="text-2xl text-red-700">{error}</p>}
-        <div className="mt-5 flex justify-between items-start">
+        <div className="mt-5 flex justify-between items-start flex-wrap">
           {isWalletConnected && (
             <div>
               <p><span className="font-bold">Account Balance: </span><span className='font-bold text-lg'>{customerTotalBalance} ETH</span></p>
@@ -292,7 +292,7 @@ const Home: NextPage = () => {
               onClick={addFriendHandler}>Add Friend</button>
           </form>
         </div>
-        <div className="my-8">
+        <div className="my-8 overflow-auto">
           <table className='w-full'>
             <thead className='border-b-2'>
               <tr>
@@ -322,11 +322,11 @@ const Home: NextPage = () => {
         <div className="my-8">
           <p className='text-lg font-bold mb-5'>Select a friend above and transfer ETH to them!</p>
           <form className="form-style flex flex-row justify-between">
-            <div className='flex-1 flex items-center'>
-              <span className='font-bold text-lg'>Transfer</span>
+            <div className='flex-1 flex items-center flex-wrap'>
+              <span className='font-bold text-lg mr-2'>Transfer</span>
               <input
                 type="text"
-                className="input-style rounded-b-lg mx-2"
+                className="input-style rounded-b-lg mr-2"
                 onChange={handleInputChange}
                 name="transferAmount"
                 placeholder="ETH"
