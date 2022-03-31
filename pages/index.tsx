@@ -209,7 +209,7 @@ const Home: NextPage = () => {
 
   return (
     <main className=" w-full">
-      <h1 className="text-center py-4 text-white text-3xl">Simple Payment Project</h1>
+      <h1 className="text-center m-10 text-white text-3xl">Simple Payment Project</h1>
       <section className="customer-section m-10 p-5 bg-white rounded-lg max-w-3xl mx-auto">
         <h1 className="text-xl font-bold">My Account</h1>
         {error && <p className="text-2xl text-red-700">{error}</p>}
@@ -314,7 +314,7 @@ const Home: NextPage = () => {
         </div>
         <hr></hr>
         <div className="my-8">
-          <p className='font-bold mb-5'>Select a friend and transfer ETH to them!</p>
+          <p className='text-lg font-bold mb-5'>Select a friend above and transfer ETH to them!</p>
           <form className="form-style flex flex-row justify-between">
             <div className='flex-1 flex items-center'>
               <span className='font-bold text-lg'>Transfer</span>
