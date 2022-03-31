@@ -222,8 +222,8 @@ const Home: NextPage = () => {
         <div className="mt-5 flex justify-between items-start">
           {isWalletConnected && (
             <div>
+              <p><span className="font-bold">Account Balance: </span><span className='font-bold text-lg'>{customerTotalBalance} ETH</span></p>
               <p><span className="font-bold">Wallet Address: </span>{customerAddress}</p>
-              <p><span className="font-bold">Account Balance: </span>{customerTotalBalance} ETH</p>
             </div>
           )}
           <button className="btn-connect" onClick={checkIfWalletIsConnected}>
