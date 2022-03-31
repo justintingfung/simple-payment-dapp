@@ -326,7 +326,7 @@ const Home: NextPage = () => {
               <span className='font-bold text-lg mr-2'>Transfer</span>
               <input
                 type="text"
-                className="input-style rounded-b-lg mr-2"
+                className="input-style rounded-b-lg mr-2 w-1/2 sm:w-1/3"
                 onChange={handleInputChange}
                 name="transferAmount"
                 placeholder="ETH"
