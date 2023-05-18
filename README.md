@@ -10,3 +10,5 @@ A **Simple Payment DAPP** Frontend for a payment smart contract running on the E
 - Typescript
 - Ethers.js
 - Solidity (smart contract: https://github.com/justintingfung/payment-smartcontract)
+
+Link: https://simple-payment-dapp.vercel.app/
